@@ -1,0 +1,39 @@
+.not-found {
+  text-align: center;
+  padding: 3rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn-home {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: 0.5rem 1rem;
+  background-color: #222;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: background 0.3s, color 0.3s;
+}
+
+.btn-home:hover {
+  background-color: #444;
+}
+
+.light.not-found {
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+.dark.not-found {
+  background-color: #121212;
+  color: #eee;
+}
+
+.dark.not-found .btn-home {
+  background-color: #333;
+  color: #fff;
+}
+
+.dark.not-found .btn-home:hover {
+  background-color: #555;
+}

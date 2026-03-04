@@ -1,0 +1,12 @@
+[build]
+  base = "segunda-entrega-hartkopf"
+  publish = "dist"
+  command = "npm install && npm run build"
+
+[build.environment]
+  NODE_VERSION = "20" # O la versión de Node que estés usando localmente
+
+
+[context.production.environment]
+  NODE_VERSION = "20"
+  NODE_ENV = "development"

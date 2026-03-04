@@ -1,0 +1,33 @@
+.button-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  gap: 5px;
+  margin-bottom: 5px;
+  background-color: var(--primary);
+  color: var(--primary-text);
+  transition: background 0.2s ease;
+}
+
+.button-primary:hover {
+  background-color: var(--primary-hover, var(--primary));
+  filter: brightness(1.1);
+}
+
+@media (max-width: 360px) {
+  .button-primary {
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 44px;
+    padding: 0.5rem 0.75rem;
+    font-size: 1rem;
+    border-radius: 8px;
+  }
+}
