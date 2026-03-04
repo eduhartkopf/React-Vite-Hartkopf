@@ -1,5 +1,5 @@
+
 [build]
-  base = "."     
   command = "npm install && npm run build"
   publish = "dist"
 
@@ -7,5 +7,4 @@
   NODE_VERSION = "20"
 
 [context.production.environment]
-  NODE_VERSION = "20"
   NODE_ENV = "production"
