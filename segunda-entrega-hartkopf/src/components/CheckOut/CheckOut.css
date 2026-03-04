@@ -1,0 +1,101 @@
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+  margin-top: -180px;
+}
+
+
+.checkout-page {
+  color: white;
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 140px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease, color 0.3s ease;
+  background: rgba(0, 0, 0, 0.3);
+
+}
+
+.checkout-page h2 {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+}
+
+.checkout-form label {
+  display: flex;
+  flex-direction: column;
+  font-size: 15px;
+  color: white;
+}
+
+.checkout-form input {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 15px;
+  outline: none;
+  transition: 0.2s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-form input::placeholder {
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.checkout-form input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 4px var(--primary-color);
+}
+
+
+.checkout-page button {
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  transition: 0.2s;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.checkout-page button:hover {
+  background: var(--primary-hover);
+  transform: scale(1.02);
+}
+
+.success {
+  text-align: center;
+  padding: 20px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+}

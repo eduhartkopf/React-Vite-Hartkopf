@@ -1,0 +1,30 @@
+.item-counter {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+}
+
+.item-counter button {
+  background-color: #2a7a2a;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  width: 35px;
+  height: 35px;
+  font-size: 1.2rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+.item-counter button:hover {
+  background-color: #1f5d1f;
+}
+
+.item-counter span {
+  min-width: 30px;
+  text-align: center;
+  font-size: 1.1rem;
+  font-weight: 500;
+}
