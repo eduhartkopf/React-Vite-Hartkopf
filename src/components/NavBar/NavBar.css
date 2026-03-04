@@ -1,57 +1,25 @@
-.inicio {
-  width: 100%;
-  overflow-x: hidden;
-  position: relative;
-  z-index: 10;
-
-}
-
-nav.inicio {
-  overflow: visible;
-  background-image: url("/images/Items/portadaLight.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding: 20px;
-  padding-bottom: 180px;
-  position: relative;
-  z-index: 10;
-}
-
 .NavBar {
-  overflow: visible;
+  position: absolute;
+  bottom: -125px;
+  right: 20px;
   display: flex;
   gap: 20px;
   list-style: none;
   padding: 0;
-  margin: 120px 20px 0 auto;
-  position: relative;
-  z-index: 20;
+  margin: 0;
+  z-index: 10;
   background: transparent;
 }
 
-nav.inicio.light {
-  background-image: url("/public/images/Items/portadaLight.jpg");
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-  padding: 20px;
-  padding-bottom: 200px;
-  position: relative;
-  z-index: 10;
-  padding-bottom: 180px;
-}
-
+nav.inicio.light,
 nav.inicio.dark {
-  background-image: url("/images/Items/portadaDark.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   padding: 20px;
-  padding-bottom: 200px;
+  padding-bottom: 180px;
   position: relative;
   z-index: 10;
-  padding-bottom: 180px;
 }
 
 nav.inicio.dark .NavBar {
@@ -67,13 +35,11 @@ nav.inicio.dark .NavBar {
   gap: 20px;
 }
 
-
 nav.inicio .logo {
   width: 240px;
   height: auto;
   margin-top: -30px;
 }
-
 
 .h1 {
   font-size: 3.2rem;
@@ -81,33 +47,8 @@ nav.inicio .logo {
   margin: 0;
 }
 
-
 .dark .h1 {
   color: black;
-}
-
-
-.NavBar {
-  position: absolute;
-  bottom: -125px;
-  right: 20px;
-  display: flex;
-  gap: 20px;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-  z-index: 10;
-  background: transparent;
-}
-
-nav.inicio.light .cart-wrapper {
-  top: 20px;
-  right: 20px;
-}
-
-.dark .cart-wrapper {
-  top: 40px;
-  right: 40px;
 }
 
 .NavBar li,
@@ -117,7 +58,6 @@ nav.inicio.light .cart-wrapper {
   font-weight: 600;
   padding-top: 20px;
   font-size: 1.1rem;
-
 }
 
 svg {
@@ -136,7 +76,6 @@ svg {
   margin: 0;
 }
 
-
 .login-button,
 .logout-button {
   margin-left: 30px !important;
@@ -148,11 +87,6 @@ svg {
   padding: 8px 16px;
   border-radius: 6px;
   transition: background 0.2s ease;
-}
-
-nav.inicio.light .NavBar {
-  margin-bottom: 0 !important;
-  margin-right: 20px !important;
 }
 
 nav.inicio.light .login-button,
@@ -192,10 +126,7 @@ nav.inicio.dark .logout-button:hover {
   padding: 8px 0;
   min-width: 150px;
   z-index: 999;
-
 }
-
-
 
 .dropdown-item {
   padding: 8px 16px;
@@ -215,22 +146,8 @@ nav.inicio.dark .logout-button:hover {
   font-weight: 600;
 }
 
+/* Media queries */
 @media (max-width: 768px) {
-
-  .nav-links {
-    position: absolute;
-    top: 70px;
-    left: 30px;
-    right: 0;
-    background-color: white;
-    flex-direction: column;
-    display: none;
-  }
-
-  .nav-links.open {
-    display: flex;
-  }
-
   nav.inicio .logo {
     width: 150px;
     margin-top: 15px;
@@ -242,7 +159,6 @@ nav.inicio.dark .logout-button:hover {
     top: 30px;
     left: 85px;
     font-size: 2rem;
-    margin: 0;
     color: white;
   }
 
@@ -251,25 +167,9 @@ nav.inicio.dark .logout-button:hover {
     right: 3px;
     gap: 14px;
   }
-
-  .NavBar li {
-    padding-top: 10px;
-    font-size: 1rem;
-  }
-
-
-
 }
 
-
-
 @media (min-width: 769px) and (max-width: 1024px) {
-
-  nav.inicio {
-    padding: 20px;
-    padding-bottom: 130px;
-  }
-
   nav.inicio .logo {
     width: 220px;
     margin-top: -25px;
@@ -282,41 +182,11 @@ nav.inicio.dark .logout-button:hover {
     left: 250px;
     font-size: 3.2rem;
     color: white;
-    margin: 0;
   }
-
 
   .NavBar {
     bottom: -140px;
     right: 5px;
     gap: 18px;
-  }
-
-  nav.inicio.dark .NavBar {
-    margin-bottom: 0 !important;
-    margin-right: 20px !important;
-  }
-
-  .NavBar li,
-  .NavBar a {
-    padding-top: 12px;
-    font-size: 1.15rem;
-  }
-
-  svg {
-    width: 26px;
-    height: 26px;
-
-  }
-
-
-  .login-button,
-  .logout-button {
-    margin-left: 10px;
-  }
-
-  .dropdown-menu {
-    top: 100%;
-    left: 0;
   }
 }
