@@ -2,33 +2,57 @@
   width: 100%;
   overflow-x: hidden;
   position: relative;
+  z-index: 10;
+
+}
+
+nav.inicio {
+  overflow: visible;
+  background-image: url("/images/Items/portadaLight.jpg");
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 180px;
+  position: relative;
+  z-index: 10;
 }
 
 .NavBar {
-  position: absolute;
-  bottom: -125px;
-
+  overflow: visible;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 120px 20px 0 auto;
+  position: relative;
+  z-index: 20;
+  background: transparent;
 }
 
-
 nav.inicio.light {
-  background-image: url("/images/Items/portadaLight.jpg") !important;
+  background-image: url("/public/images/Items/portadaLight.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   padding: 20px;
-  padding-bottom: 140px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 180px;
 }
 
 nav.inicio.dark {
-  background-image: url("/images/Items/portadaDark.jpg") !important;
+  background-image: url("/images/Items/portadaDark.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
   padding: 20px;
-  padding-bottom: 140px;
+  padding-bottom: 200px;
+  position: relative;
+  z-index: 10;
+  padding-bottom: 180px;
 }
-
 
 nav.inicio.dark .NavBar {
   background-color: var(--bg-nav) !important;
@@ -167,8 +191,11 @@ nav.inicio.dark .logout-button:hover {
   list-style: none;
   padding: 8px 0;
   min-width: 150px;
-  z-index: 100;
+  z-index: 999;
+
 }
+
+
 
 .dropdown-item {
   padding: 8px 16px;

@@ -9,6 +9,8 @@
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
   background: var(--card-bg);
   transition: background 0.3s ease, color 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 

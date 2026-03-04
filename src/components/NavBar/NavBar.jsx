@@ -48,6 +48,8 @@ function NavBar() {
       });
   };
 
+
+
   return (
     <nav className={`inicio ${theme}`}>
       <div className="left-block">
@@ -59,12 +61,9 @@ function NavBar() {
         <CartWidget />
         <h1 className="h1">Ramp & Roll</h1>
         <ul className="NavBar">
-          <li
-            className="dropdown"
-            onMouseEnter={() => setIsOpen(true)}
-            onMouseLeave={() => setIsOpen(false)}
-          >
-            Categorías
+          <li className="dropdown">
+            <span onClick={() => setIsOpen(!isOpen)}>Categorías</span>
+
             {isOpen && (
               <ul className="dropdown-menu">
                 {categories.map((cat) => (
@@ -76,10 +75,11 @@ function NavBar() {
                     {cat}
                   </li>
                 ))}
+
                 <li
                   className="dropdown-item back-home"
                   onClick={() => {
-                    goHome("/");
+                    goHome();
                     setIsOpen(false);
                   }}
                 >
