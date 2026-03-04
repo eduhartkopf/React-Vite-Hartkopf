@@ -1,0 +1,25 @@
+.app-root.light {
+  background-color: #f5f5f5;
+  color: #222;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-root.dark {
+  background-color: #121212;
+  color: #eee;
+  min-height: 100vh;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.app-root.light .inicio {
+  background-image: url("/images/Items/logoPortada.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+.app-root.dark .inicio {
+  background-image: url("/images/Items/portadaDark.jpg");
+  background-size: cover;
+  background-position: center;
+}
