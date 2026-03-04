@@ -1,0 +1,295 @@
+.inicio {
+  width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.NavBar {
+  position: absolute;
+  bottom: -125px;
+
+}
+
+
+nav.inicio.light {
+  background-image: url("/images/Items/portadaLight.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 140px;
+}
+
+nav.inicio.dark {
+  background-image: url("/images/Items/portadaDark.jpg") !important;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  padding: 20px;
+  padding-bottom: 140px;
+}
+
+
+nav.inicio.dark .NavBar {
+  background-color: var(--bg-nav) !important;
+  border: none;
+  box-shadow: none;
+}
+
+.left-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+
+nav.inicio .logo {
+  width: 240px;
+  height: auto;
+  margin-top: -30px;
+}
+
+
+.h1 {
+  font-size: 3.2rem;
+  color: white;
+  margin: 0;
+}
+
+
+.dark .h1 {
+  color: black;
+}
+
+
+.NavBar {
+  position: absolute;
+  bottom: -125px;
+  right: 20px;
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  z-index: 10;
+  background: transparent;
+}
+
+nav.inicio.light .cart-wrapper {
+  top: 20px;
+  right: 20px;
+}
+
+.dark .cart-wrapper {
+  top: 40px;
+  right: 40px;
+}
+
+.NavBar li,
+.NavBar a {
+  color: white !important;
+  text-decoration: none;
+  font-weight: 600;
+  padding-top: 20px;
+  font-size: 1.1rem;
+
+}
+
+svg {
+  color: white;
+}
+
+.cart-wrapper svg {
+  margin-left: 37px;
+  position: absolute;
+  top: 20px;
+  right: -35px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  margin: 0;
+}
+
+
+.login-button,
+.logout-button {
+  margin-left: 30px !important;
+  font-weight: 600;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-size: 1rem;
+  padding: 8px 16px;
+  border-radius: 6px;
+  transition: background 0.2s ease;
+}
+
+nav.inicio.light .NavBar {
+  margin-bottom: 0 !important;
+  margin-right: 20px !important;
+}
+
+nav.inicio.light .login-button,
+nav.inicio.light .logout-button {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white !important;
+}
+
+nav.inicio.light .login-button:hover,
+nav.inicio.light .logout-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+nav.inicio.dark .login-button,
+nav.inicio.dark .logout-button {
+  background-color: rgba(255, 255, 255, 0.6);
+  color: black !important;
+}
+
+nav.inicio.dark .login-button:hover,
+nav.inicio.dark .logout-button:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+.dropdown {
+  position: relative;
+  cursor: pointer;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: grey;
+  border-radius: 6px;
+  list-style: none;
+  padding: 8px 0;
+  min-width: 150px;
+  z-index: 100;
+}
+
+.dropdown-item {
+  padding: 8px 16px;
+  font-size: 0.95rem;
+  transition: background 0.2s;
+}
+
+.dropdown-item:hover {
+  background-color: var(--primary);
+  color: var(--primary-text);
+}
+
+.dropdown-item.back-home {
+  border-top: 1px solid black;
+  padding-top: 10px;
+  margin-top: 8px;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    left: 30px;
+    right: 0;
+    background-color: white;
+    flex-direction: column;
+    display: none;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  nav.inicio .logo {
+    width: 150px;
+    margin-top: 15px;
+    margin-left: -45px;
+  }
+
+  nav.inicio .h1 {
+    position: absolute;
+    top: 30px;
+    left: 85px;
+    font-size: 2rem;
+    margin: 0;
+    color: white;
+  }
+
+  .NavBar {
+    bottom: -140px;
+    right: 3px;
+    gap: 14px;
+  }
+
+  .NavBar li {
+    padding-top: 10px;
+    font-size: 1rem;
+  }
+
+
+
+}
+
+
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+  nav.inicio {
+    padding: 20px;
+    padding-bottom: 130px;
+  }
+
+  nav.inicio .logo {
+    width: 220px;
+    margin-top: -25px;
+    margin-left: -30px;
+  }
+
+  .h1 {
+    position: absolute;
+    top: 15px;
+    left: 250px;
+    font-size: 3.2rem;
+    color: white;
+    margin: 0;
+  }
+
+
+  .NavBar {
+    bottom: -140px;
+    right: 5px;
+    gap: 18px;
+  }
+
+  nav.inicio.dark .NavBar {
+    margin-bottom: 0 !important;
+    margin-right: 20px !important;
+  }
+
+  .NavBar li,
+  .NavBar a {
+    padding-top: 12px;
+    font-size: 1.15rem;
+  }
+
+  svg {
+    width: 26px;
+    height: 26px;
+
+  }
+
+
+  .login-button,
+  .logout-button {
+    margin-left: 10px;
+  }
+
+  .dropdown-menu {
+    top: 100%;
+    left: 0;
+  }
+}

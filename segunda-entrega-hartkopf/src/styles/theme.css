@@ -1,0 +1,36 @@
+:root {
+  --bg: #ffffff;
+  
+  --text: #111;
+  --text-secondary: #555;
+
+  --card-bg: #ffffff;
+  --card-border: #e0e0e0;
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --card-shadow-hover: 0 6px 20px rgba(0, 0, 0, 0.15);
+
+  --btn-bg: #2a7a2a;
+  --btn-bg-hover: #1f5f1f;
+  --btn-text: #ffffff;
+
+  --primary: #2a7a2a;
+}
+
+
+.dark {
+  --bg: #0f0f0f;
+
+  --text: #eaeaea;
+  --text-secondary: #bbbbbb;
+
+  --card-bg: #1a1a1a;
+  --card-border: #333;
+  --card-shadow: 0 4px 15px rgba(255, 255, 255, 0.05);
+  --card-shadow-hover: 0 6px 20px rgba(255, 255, 255, 0.1);
+
+  --btn-bg: #1f5f1f;
+  --btn-bg-hover: #174f17;
+  --btn-text: #ffffff;
+
+  --primary: #3fbf3f;
+}

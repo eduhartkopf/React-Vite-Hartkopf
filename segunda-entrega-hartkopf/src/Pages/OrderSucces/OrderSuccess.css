@@ -1,0 +1,49 @@
+.orderSuccess__container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 50%;
+  padding: 20px;
+  padding-bottom: 140px;
+  margin: 60px auto 0 auto;
+  border-radius: 16px;
+  background: rgba(0, 0, 0, 0.3);
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.12);
+  transition: background 0.3s ease, color 0.3s ease;
+}
+
+.orderSuccess__container h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.orderSuccess__id {
+  font-size: 1.2rem;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+  color: var(--primary-color);
+}
+
+.orderSuccess__button {
+  padding: 12px;
+  border-radius: 10px;
+  background: var(--primary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  transition: 0.2s;
+}
+
+.orderSuccess__button:hover {
+  background: var(--primary-hover);
+  transform: scale(1.02);
+}
